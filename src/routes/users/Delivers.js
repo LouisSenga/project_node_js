@@ -59,7 +59,7 @@ const createDeliver = (app) => {
             if(error instanceof ValidationError) {
                 return res.status(400).json({ message: error.message, data: error })
             } else {
-                const message = "Le ssaisie de livraison n'a pas pu être ajouté. Réessayez plus tard😎"
+                const message = "Le ssaisie de livraison n'a pas pu être ajouté. Réessayez plus tard 😎"
                 res.status(500).json({message, data: error})
             }
         })
